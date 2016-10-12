@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13FD3291-8767-4B7B-8B26-5EB73C634F6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpaceInvaders</RootNamespace>
+    <AssemblyName>SpaceInvaders</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomMenu.cs" />
+    <Compile Include="PageManager.cs" />
+    <Compile Include="Powerup.cs" />
+    <Compile Include="Shield.cs" />
+    <Compile Include="Stars.cs" />
+    <Compile Include="TopList.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Shot.cs" />
+    <Compile Include="PlayerShip.cs" />
+    <Compile Include="Invader.cs" />
+    <Compile Include="InvadersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvadersFrm.Designer.cs">
+      <DependentUpon>InvadersFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpaceInvaders.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InvadersFrm.resx">
+      <DependentUpon>InvadersFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flyingsaucer3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flyingsaucer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flyingsaucer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flyingsaucer4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satellite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satellite2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satellite3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satellite4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaceship1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaceship2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaceship3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaceship4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lifeUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numShotUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipSpeedUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shotSpeedUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invaderkilled.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watchit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watchit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watchit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watchit4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
